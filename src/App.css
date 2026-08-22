@@ -4,6 +4,10 @@ body {
 a {
   color: #a2125f;
 }
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 .App-header {
   margin-top: 0;

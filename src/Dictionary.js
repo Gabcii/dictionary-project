@@ -9,13 +9,20 @@ export default function Dictionary(props) {
   let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
-    console.log(response.data);
     setResult(response.data);
+  }
+
+  function handlePhotoResponse(response) {
+    console.log(response);
   }
   function search() {
     let apiKey = "3986b1bo304da0tf76e74d198cd0536a";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+
+    let photoApi = "3986b1bo304da0tf76e74d198cd0536a";
+    let photoUrl = `https://api.shecodes.io/images/v1/search?query={query}&key=${photoApi}`;
+    axios.get(photoUrl).then(handlePhotoResponse);
   }
 
   function handleSubmit(event) {
@@ -43,7 +50,7 @@ export default function Dictionary(props) {
                 defaultValue={props.defaultKeyword}
               ></input>
             </form>
-            <div className="hint">suggested words:</div>
+            <div className="hint">suggested words: sun, fly, cup etc..</div>
           </div>
         </section>
         <Results result={result} />
