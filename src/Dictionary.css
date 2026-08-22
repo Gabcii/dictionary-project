@@ -18,12 +18,19 @@
   max-width: 600px;
 }
 
+.Dictionary form {
+  width: 100%;
+}
 .Dictionary input {
   width: 100%;
   padding: 6px 4px;
+  font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 6px;
   color: #333;
+  cursor: text;
+  box-sizing: border-box;
+  outline: none;
 }
 .Dictionary .hint {
   font-size: 11px;

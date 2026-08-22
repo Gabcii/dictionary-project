@@ -18,7 +18,7 @@ export default function Results(props) {
               🔊 Listen
             </button>
             {props.result.phonetic && (
-              <div className="Phonetic">{props.result.phonetic}</div>
+              <div className="Phonetic">/{props.result.phonetic}/</div>
             )}
           </div>
         </section>

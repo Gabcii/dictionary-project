@@ -19,8 +19,8 @@ a {
   transform-origin: center center;
   display: block;
   margin: 30px auto -40px;
-
   mix-blend-mode: multiply;
+  pointer-events: none;
 }
 .App-footer {
   text-align: center;

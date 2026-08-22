@@ -1,0 +1,16 @@
+.Photos img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.Photos .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.Photos .col-4 {
+  flex: 1 1 calc(33.333% - 15px);
+  max-width: calc(33.333% - 15px);
+}
