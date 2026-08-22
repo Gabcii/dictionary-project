@@ -1,10 +1,22 @@
+body {
+  background: #f9f8fe;
+}
+a {
+  color: #a2125f;
+}
+
 .App-header {
   margin-top: 0;
+  text-align: center;
 }
 .Dictionary-logo {
-  max-width: 200px;
-  margin: 0 auto;
+  width: 250px !important;
+  transform: scale(2) translateX(20px);
+  transform-origin: center center;
   display: block;
+  margin: 30px auto -40px;
+
+  mix-blend-mode: multiply;
 }
 .App-footer {
   text-align: center;

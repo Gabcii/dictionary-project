@@ -1,3 +1,37 @@
 .Dictionary {
   text-align: center;
+  padding: 0 20px;
+}
+.Dictionary h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.Dictionary section,
+.Meaning,
+.Result-wrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px rgba(0 0 0 / 10%);
+  margin: 20px auto;
+  max-width: 600px;
+}
+.Dictionary-logo {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 20px;
+  mix-blend-mode: multiply;
+}
+.Dictionary input {
+  width: 100%;
+  padding: 6px 4px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #333;
+}
+.Dictionary .hint {
+  font-size: 11px;
+  margin-top: 5px;
 }
