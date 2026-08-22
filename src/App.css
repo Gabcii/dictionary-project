@@ -1,10 +1,12 @@
 .App-header {
-  padding: 0;
-  display: inline-block;
-  border-radius: 12px;
+  margin-top: 0;
 }
 .Dictionary-logo {
-  width: 200px;
+  max-width: 200px;
   margin: 0 auto;
   display: block;
+}
+.App-footer {
+  text-align: center;
+  margin: 30px 0;
 }
